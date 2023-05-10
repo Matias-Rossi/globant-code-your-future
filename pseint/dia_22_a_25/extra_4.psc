@@ -1,6 +1,9 @@
 //	Realizar un programa que calcule la multiplicación de dos matrices de enteros de 3x3.
 //	Inicialice las matrices para evitar el ingreso de datos por teclado.
 
+// Nota: Realicé un producto matricial correcto matemáticamente, es decir no multipliqué
+// los valores uno a uno si no que realicé un proceso similar al pedido en el extra_6
+
 /// Subalgoritmos ya usados
 SubProceso mostrarMatriz(matriz, filas, columnas)
 	Definir i, j Como Entero
