@@ -31,25 +31,6 @@ FinSubProceso
 
 
 /// Subalgoritmos nuevos
-SubProceso agregarPlantillaAInforme(informe)
-	Definir i Como Entero
-	// Columnas
-	informe[0, 1] = "Lunes"
-	informe[0, 2] = "Martes"
-	informe[0, 3] = "Miércoles"
-	informe[0, 4] = "Jueves"
-	informe[0, 5] = "Viernes"
-	informe[0, 6] = "Total producto"
-	
-	// Filas
-	Para i=1 Hasta 5 Hacer
-		informe[i, 0] = Concatenar("Producto ", ConvertirATexto(i))
-	FinPara
-	informe[6, 0] = "Total semana"
-	informe[7, 0] = "Producto más vendido"
-FinSubProceso
-
-
 SubProceso agregarVentasTotalesProducto(informe)
 	Definir fila, columna, suma Como Entero
 	Para fila=0 Hasta 4 Hacer
@@ -77,7 +58,7 @@ FinSubProceso
 SubProceso agregarProductoMasVendido(informe)
 	Definir productoMasVendido, cantidadMasVendido, fila, columna Como Entero
 	
-	Para columna=1 Hasta 5 Hacer
+	Para columna=0 Hasta 5 Hacer
 		productoMasVendido = 1
 		cantidadMasVendido = informe[0, columna]
 		Para fila=0 Hasta 4 Hacer
@@ -92,7 +73,6 @@ FinSubProceso
 
 
 SubProceso realizarInforme(matriz)
-	//agregarPlantillaAInforme(matriz)
 	agregarVentasTotalesProducto(matriz)
 	agregarTotalesSemana(matriz)
 	agregarProductoMasVendido(matriz)
