@@ -26,7 +26,11 @@ public class JavaIntroEj1 {
        //ejercicio10();
        //ejercicio11();
        //ejercicio12();
-       ejercicio13();
+       //ejercicio13();
+       
+       /* EJERCICIOS DE APRENDIZAJE */
+       
+       
     }
     
     private static void ejercicio4() {
