@@ -59,7 +59,6 @@ public class Ejercicio21 {
         
         boolean matrizEncontrada;
         
-        
         for (int i = 0; i < cantFilasContenedora - cantFilasBuscada; i++) {
             for (int j = 0; j < cantColumnasContenedora - cantColumnasBuscada; j++) {
                 if(matrizBuscada[0][0] == matrizContenedora[i][j]) {
