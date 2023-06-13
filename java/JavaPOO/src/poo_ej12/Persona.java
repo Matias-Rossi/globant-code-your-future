@@ -30,7 +30,7 @@ public class Persona {
         System.out.println("Ingrese el año de nacimiento: ");
         int anio = leer.nextInt();
         
-        this.fechaNacimiento = Date(anio-1900, mes, dia);
+        this.fechaNacimiento = new Date(anio-1900, mes, dia);
     }
     
     public int calcularEdad() {
@@ -44,9 +44,9 @@ public class Persona {
     public void mostrarPersona() {
         System.out.println("Nombre: " + nombre);
         System.out.print("Fecha de nacimiento: ");
-        System.out.print(fechaNacimiento.getDay() + "/");
+        System.out.print(fechaNacimiento.getDate()+ "/");
         System.out.print(fechaNacimiento.getMonth() + "/");
-        System.out.print(fechaNacimiento.getYear() + "\n");
+        System.out.print(fechaNacimiento.getYear() + 1900 + "\n");
     }
     
     // Constructores, getters & setters
