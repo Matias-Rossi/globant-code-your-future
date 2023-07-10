@@ -14,22 +14,7 @@ import java.util.Scanner;
 public class Puntos {
     private double x1, x2, y1, y2;
     
-    public void crearPuntos() {
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese coordenadas para x1 y y1, separados por <ENTER>:");
-        x1 = leer.nextDouble();
-        y1 = leer.nextDouble();
-        
-        System.out.println("Ingrese coordenadas para x2 y y2, separados por <ENTER>:");
-        x2 = leer.nextDouble();
-        y2 = leer.nextDouble();
-    }
-    
-    public double calcularDistancia() {
-        double distanciaX = x2-x1;
-        double distanciaY = y2-y1;
-        return Math.sqrt(Math.pow(distanciaX, 2) + Math.pow(distanciaY, 2));
-    }
+
     
     
     
@@ -76,11 +61,6 @@ public class Puntos {
     public void setY2(double y2) {
         this.y2 = y2;
     }
-    
-    public static void main(String[] args) {
-        Puntos p = new Puntos();
-        p.crearPuntos();
-        System.out.println("Distancia: " + p.calcularDistancia());
-    }
+
     
 }
