@@ -19,32 +19,6 @@ public class Movil {
     private int almacenamiento; //GB
     private int[] codigo = new int[7];
     
-    public void cargarCelular() {
-        Scanner leer = new Scanner(System.in);
-        
-        System.out.println("Ingrese la marca del móvil: ");
-        marca = leer.nextLine();
-        System.out.println("Ingrese el modelo del móvil: ");
-        modelo = leer.nextLine();
-        System.out.println("Ingrese el precio del móvil: ");
-        precio = leer.nextDouble();
-        System.out.println("Ingrese la memoria RAM del móvil (en GB): ");
-        memoriaRam = leer.nextInt();
-        System.out.println("Ingrese la capacidad de almacenamiento del móvil (en GB): ");
-        almacenamiento = leer.nextInt();
-        
-        ingresarCodigo(); //El enunciado no aclara, pero lo agrego igual
-    }
-    
-    public void ingresarCodigo() {
-        Scanner leer = new Scanner(System.in);
-        
-        System.out.println("Ingrese los 7 dígitos, uno por vez, del código: ");
-        for (int i = 0; i < 7; i++) {
-            codigo[i] = leer.nextInt();
-        }
-    }
-    
     // Constructores, getters & setters
     public Movil() {}
 

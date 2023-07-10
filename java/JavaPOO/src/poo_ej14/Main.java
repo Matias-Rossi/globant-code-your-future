@@ -11,8 +11,7 @@ package poo_ej14;
  */
 public class Main {
     static public void main(String[] args) {
-        Movil movil = new Movil();
-        
-        movil.cargarCelular();
+        MovilService movilService = new MovilService();
+        movilService.cargarCelular(); //Incluye el ingresado del código
     }
 }
