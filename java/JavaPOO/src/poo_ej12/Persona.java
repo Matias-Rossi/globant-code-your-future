@@ -16,39 +16,7 @@ public class Persona {
     String nombre;
     Date fechaNacimiento;
     
-    public void crearPersona() {
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese el nombre de la persona: ");
-        this.nombre = leer.nextLine();
-        
-        System.out.println("Ingrese (solo) el dia de nacimiento: ");
-        int dia = leer.nextInt();
-        
-        System.out.println("Ingrese el mes de nacimiento: ");
-        int mes = leer.nextInt();
-        
-        System.out.println("Ingrese el año de nacimiento: ");
-        int anio = leer.nextInt();
-        
-        this.fechaNacimiento = new Date(anio-1900, mes, dia);
-    }
-    
-    public int calcularEdad() {
-        return new Date().getYear() - fechaNacimiento.getYear();
-    }
-    
-    public boolean menorQue(int edad) {
-        return calcularEdad() < edad;
-    }
-       
-    public void mostrarPersona() {
-        System.out.println("Nombre: " + nombre);
-        System.out.print("Fecha de nacimiento: ");
-        System.out.print(fechaNacimiento.getDate()+ "/");
-        System.out.print(fechaNacimiento.getMonth() + "/");
-        System.out.print(fechaNacimiento.getYear() + 1900 + "\n");
-    }
-    
+
     // Constructores, getters & setters
     public Persona() {}
     

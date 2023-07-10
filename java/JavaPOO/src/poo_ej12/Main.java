@@ -11,7 +11,7 @@ package poo_ej12;
  */
 public class Main {
     static public void main(String[] args) {
-        Persona p = new Persona();
+        PersonaService p = new PersonaService();
         p.crearPersona();
         System.out.println("La edad de la persona es " + p.calcularEdad());
         
