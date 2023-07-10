@@ -11,7 +11,7 @@ package poo_ej13;
  */
 public class Main {
     static public void main(String[] args) {
-        Curso c = new Curso();
+        CursoService c = new CursoService();
         
         c.crearCurso();
         
