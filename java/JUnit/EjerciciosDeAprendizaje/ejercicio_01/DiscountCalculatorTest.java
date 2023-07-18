@@ -29,7 +29,7 @@ public class DiscountCalculatorTest {
 
     @Test
     public void aplicarDescuentoTotalTest() {
-        double valorDescontado = discountCalculator.aplicarDescuento(100, 90);
-        assertEquals(10.0, valorDescontado);
+        double valorDescontado = discountCalculator.aplicarDescuento(100, 100);
+        assertEquals(0.0, valorDescontado);
     }
 }
