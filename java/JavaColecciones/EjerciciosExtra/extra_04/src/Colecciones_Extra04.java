@@ -9,7 +9,7 @@ public class Colecciones_Extra04 {
         Scanner scanner = new Scanner(System.in);
         Map<Integer, String> codigos = new HashMap<>();
 
-        ingresarCiudades(codigos, 5, scanner);
+        ingresarCiudades(codigos, 10, scanner);
 
         buscarPorCodigoPostal(codigos, scanner);
 
